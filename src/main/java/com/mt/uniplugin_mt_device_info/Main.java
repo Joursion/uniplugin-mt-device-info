@@ -12,4 +12,14 @@ public class Main extends UniModule {
         DeviceInfo deviceInfo = DeviceUtil.getDeviceInfo(mUniSDKInstance.getContext());
         callback.invokeAndKeepAlive(JSON.toJSONString(deviceInfo));
     }
+
+    @UniJSMethod(uiThread = true)
+    public void restartAppAndKillProcess() {
+        RestartAPPUtil.restartAPP4(true);
+    }
+
+    @UniJSMethod(uiThread = true)
+    public void restartApp() {
+        RestartAPPUtil.restartAPP4(false);
+    }
 }
