@@ -1,7 +1,7 @@
 {
   "name": "mt-device-info",
   "id": "mt-device-info",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "获取安卓设备信息，包括：wifiMac, imei, sn, id, androidId, system_model",
   "_dp_type": "nativeplugin",
   "_dp_nativeplugin": {

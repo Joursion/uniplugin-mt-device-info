@@ -3,4 +3,7 @@
     package="com.mt.uniplugin_mt_device_info">
 
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <application>
+        <service android:name=".KillSelfService"/>
+    </application>
 </manifest>

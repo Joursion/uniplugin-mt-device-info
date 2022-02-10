@@ -19,12 +19,24 @@ public class Main extends UniModule {
     @UniJSMethod(uiThread = true)
     public void restartAppAndKillProcess() {
         Log.w(tag, "restartAppAndKillProcess");
-        RestartAPPUtil.restartAPP4(true);
+        RestartAPPUtil.restartApp5(mUniSDKInstance.getContext(), true);
     }
 
     @UniJSMethod(uiThread = true)
     public void restartApp() {
         Log.w(tag, "restartApp");
-        RestartAPPUtil.restartAPP4(false);
+        RestartAPPUtil.restartApp5(mUniSDKInstance.getContext(), false);
+    }
+
+    @UniJSMethod(uiThread = true)
+    public void restartAppWithService() {
+        Log.w(tag, "restartAppWithService");
+        RestartAPPUtil.restartApp1(mUniSDKInstance.getContext(), 2000);
+    }
+
+    @UniJSMethod(uiThread = true)
+    public void restartAppWithAlarmManager() {
+        Log.w(tag, "restartAppWithAlarmManager");
+        RestartAPPUtil.restartApp2(mUniSDKInstance.getContext());
     }
 }

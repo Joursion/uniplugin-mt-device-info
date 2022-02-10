@@ -5,7 +5,8 @@
 1. 获取安卓设备信息，包括：wifiMac, imei, sn, id, androidId, system_model
 
 2. 重启设备
-（后期会增加其他基础信息的查询）
+
+3.（后期会增加其他基础信息的查询）
 
 ## 使用文档
 
@@ -26,4 +27,6 @@ deviceUtil.getDeviceInfoStr((deviceInfo) => {
 ```javascript
 deviceUtil.restartApp(); // 重启不杀进程
 deviceUtil.restartAppAndKillProcess(); // 杀进程后再重启
+deviceUtil.restartAppWithService();
+deviceUtil.restartAppWithAlarmManager();
 ```
