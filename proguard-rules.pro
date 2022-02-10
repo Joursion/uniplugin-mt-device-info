@@ -22,3 +22,6 @@
 
 -keep public class * extends io.dcloud.feature.uniapp.common.UniModule{*;}
 -keep public class com.mt.uniplugin_mt_device_info.DeviceInfo
+-keep class com.blankj.utilcode.* { *; }
+-keepclassmembers class com.blankj.utilcode.* { *; }
+-dontwarn com.blankj.utilcode.**
